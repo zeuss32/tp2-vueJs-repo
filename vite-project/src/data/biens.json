@@ -1,0 +1,23 @@
+{
+  "goods": [
+    {
+      "name": "Fuel",
+      "symbol": "FUEL",
+      "volumePerUnit": 1,
+      "url": "../../images/fuel.jpg"
+
+    },
+    {
+      "name": "Chemicals",
+      "symbol": "CHEMICALS",
+      "volumePerUnit": 1,
+      "url": "./../images/chemicals.jpg"
+    },
+    {
+      "name": "Metals",
+      "symbol": "METALS",
+      "volumePerUnit": 1,
+      "url": "./../images/Metals.jpg"
+    }
+  ]
+}
