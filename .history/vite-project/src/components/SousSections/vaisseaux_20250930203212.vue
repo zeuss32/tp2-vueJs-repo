@@ -1,11 +1,8 @@
 <template>
-
   <div class="row" :tabVaisseaux="tabFiltre">
     <div
       class="col-md-4 mb-3"
       v-for="(ship, index) in vaisJson.ships"
-
-
       :key="ship.name"
     >
       <div class="card h-100 bg-info text-white">
@@ -40,26 +37,20 @@
         </div>
       </div>
       <DetailsVaisseau :information="ship" :index="index" />
-
     </div>
   </div>
 </template>
 
 <script setup>
-
 import { ref, watch } from "vue";
 import DetailsVaisseau from "@/components/SousSections/detailsVaisseaux.vue";
 import vaisJson from "../../data/vaisseaux.json"
 defineProps({
   vaisJson: Array,
-
-
-
 });
 
 function combinaison(index) {
   return "#" + index;
-
 };
 const tabVaisseaux = ref(vaisJson.ships);
 const tabFiltre = ref([]);
@@ -70,7 +61,6 @@ watch(vitesseInput, (newValue) => {
     (ship) => ship.speed >= Number(newValue)
   );
 })
-
 
 
 </script>

@@ -27,13 +27,11 @@
           <a class="nav-link" href="#">Y: {{ y }}</a>
         </li>
         <li class="nav-item dropdown">
-
           <RouterLink
             class="nav-link  "
             to="/biens">
             BIENS
           </RouterLink>
-
         </li>
       </ul>
     </div>
@@ -117,9 +115,7 @@
 <script setup>
 import { ref } from "vue";
 import CorpsDePage from "./CorpsDePage.vue";
-
 import { RouterLink } from "vue-router";
-
 
 let x = ref(0);
 let y = ref(0);
