@@ -29,7 +29,10 @@
         <li class="nav-item dropdown">
           <RouterLink
             class="nav-link  "
-            to="/biens">
+            to="/biens"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             BIENS
           </RouterLink>
         </li>

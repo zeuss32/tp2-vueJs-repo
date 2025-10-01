@@ -36,6 +36,7 @@
           </button>
         </div>
       </div>
+      <DetailsVaisseau :information="ship" :index="index" />
     </div>
   </div>
 </template>
