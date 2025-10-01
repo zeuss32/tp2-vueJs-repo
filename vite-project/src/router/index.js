@@ -1,11 +1,15 @@
 import { createWebHistory, createRouter } from "vue-router";
+
+
 import systemes from "../components/SousSections/systemes.vue";
 import vaisseaux from "../components/SousSections/vaisseaux.vue";
 import detailsVaisseaux from "../components/SousSections/detailsVaisseaux.vue";
 import biens from "../components/SousSections/biens.vue";
 
 
+
 const routes = [
+
 
   {
     path:"/systemes",
