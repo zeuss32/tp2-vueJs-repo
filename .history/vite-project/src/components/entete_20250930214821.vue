@@ -120,7 +120,7 @@ import CorpsDePage from "./CorpsDePage.vue";
 import { RouterLink } from "vue-router";
 
 
-const props=defineProps({
+defineProps({
   x:Number,
   y:Number
  })

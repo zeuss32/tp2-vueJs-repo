@@ -5,8 +5,6 @@ import systemes from "../components/SousSections/systemes.vue";
 import vaisseaux from "../components/SousSections/vaisseaux.vue";
 import detailsVaisseaux from "../components/SousSections/detailsVaisseaux.vue";
 import biens from "../components/SousSections/biens.vue";
-import systeme from "../components/SousSections/systeme.vue";
-import CoprsSpatial from "../components/SousSections/coprsSpatial.vue";
 
 
 
@@ -20,17 +18,17 @@ const routes = [
 
   },
   {
-    path:'/systeme/:symbol',
-    name:'systeme',
+    path:'/systemes/:Symb_sys',
+    name:'Systemes',
     props: true,
-    component: systeme
+    component: systemes
 
   },
   {
-    path:'/systeme/:symbolSys/:symbolP',
+    path:'/systemes/:symb_C_S',
     name:'Corps spatiaux',
     props: true,
-    component: CoprsSpatial
+    component: systemes
 
   },
   {

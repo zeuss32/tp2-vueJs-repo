@@ -1,8 +1,7 @@
 <template>
 	<div class="container">
+		<div class="row" :sys="sysJson.systems">
 
-		<div class="row" v-for="sys in sysJson.systems" :key="sys.symbol">
-			<RouterLink :to="{ name: 'systeme', params: { symbol: sys.symbol } }">
 				<div class="card col-12 mb-4">
 					<div class="card-body">
 						<h5 class="card-title text-uppercase">SYSTÈME : {{ sys.name }}</h5>
@@ -18,7 +17,7 @@
 					</ul>
 
 					<div class="row p-3">
-						<!--  <div
+					  <div
               class="col-md-4 mb-3"
               v-for="sysP in sys.planets"
               :key="sysP.symbol"
@@ -51,7 +50,7 @@
                   >
                 </div>
               </div>
-            </div>-->
+            </div>
 					</div>
 				</div>
 			</RouterLink>
@@ -62,6 +61,7 @@
 <script setup>
 import sysJson from "../../data/systemes.json";
 defineProps({
+	sysJson: Array,
 	x: Number,
 	y: Number,
 });

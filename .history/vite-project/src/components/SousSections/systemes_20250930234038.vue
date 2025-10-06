@@ -1,6 +1,5 @@
 <template>
 	<div class="container">
-
 		<div class="row" v-for="sys in sysJson.systems" :key="sys.symbol">
 			<RouterLink :to="{ name: 'systeme', params: { symbol: sys.symbol } }">
 				<div class="card col-12 mb-4">

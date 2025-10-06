@@ -115,12 +115,12 @@
 </template>
 
 <script setup>
-
+import { ref } from "vue";
 import CorpsDePage from "./CorpsDePage.vue";
 import { RouterLink } from "vue-router";
 
 
-const props=defineProps({
+defineProps({
   x:Number,
   y:Number
  })

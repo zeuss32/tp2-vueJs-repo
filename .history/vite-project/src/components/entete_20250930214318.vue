@@ -108,22 +108,18 @@
     <h1 class="text-center bg-dark text-white titrePage">
       Starship Company🚀
     </h1>
-    <h2 class="bg-dark text-white">coordonnées:({{ props.x }},{{ props.y }})</h2>
+    <h2 class="bg-dark text-white">coordonnées:({{ x }},{{ y }})</h2>
 
 
 
 </template>
 
 <script setup>
-
+import { ref } from "vue";
 import CorpsDePage from "./CorpsDePage.vue";
 import { RouterLink } from "vue-router";
 
 
-const props=defineProps({
-  x:Number,
-  y:Number
- })
 
 </script>
 

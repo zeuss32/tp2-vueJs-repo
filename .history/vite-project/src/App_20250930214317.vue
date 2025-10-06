@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 import entete from "./components/entete.vue";
 import piedPage from "./components/piedPage.vue";
 import { RouterView } from "vue-router";
@@ -13,7 +12,7 @@ function newCoords(newX, newY) {
 
 <template>
   <entete :x="x" :y="y" />
-  <RouterView  @nouvellesCoordonnees="newCoords" :x="x" :y="y" />
+  <RouterView  @nouvellesCoordonnees="newCoords"/>
   <piedPage />
 </template>
 

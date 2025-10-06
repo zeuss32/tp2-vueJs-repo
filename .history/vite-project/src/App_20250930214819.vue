@@ -13,7 +13,7 @@ function newCoords(newX, newY) {
 
 <template>
   <entete :x="x" :y="y" />
-  <RouterView  @nouvellesCoordonnees="newCoords" :x="x" :y="y" />
+  <RouterView  @nouvellesCoordonnees="newCoords"/>
   <piedPage />
 </template>
 

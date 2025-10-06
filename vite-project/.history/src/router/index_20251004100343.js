@@ -27,7 +27,7 @@ const routes = [
 
   },
   {
-    path:'/systeme/:symbolSys/:symbolP',
+    path:'/systeme/:symbol',
     name:'Corps spatiaux',
     props: true,
     component: CoprsSpatial
